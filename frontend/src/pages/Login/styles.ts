@@ -4,6 +4,20 @@ export const Container = styled.div`
     max-width: 500px;
     margin: 0 auto;
     padding: 2.5rem 4rem;
+
+
+    animation: up 200ms ease-out;
+
+    @keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 `
 
 export const FormContainer = styled.div`

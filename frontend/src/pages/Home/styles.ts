@@ -39,6 +39,19 @@ export const Container = styled.div`
                 color: var(--red);
             }
         }
+
+        animation: up 200ms ease-out;
+
+        @keyframes up{
+        from{
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
     }
 
     button{
