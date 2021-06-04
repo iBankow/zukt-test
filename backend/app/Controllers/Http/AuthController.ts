@@ -37,10 +37,8 @@ export default class AuthController {
     }
     public async tokenVerify({ params }: HttpContextContract) {
         const token = params.token
-        console.log(token)
         const cads = await User.query().from('api_tokens').select('token').where('token',token)
 
-        console.log(cads)
 
         if(cads[0]){
             return true
