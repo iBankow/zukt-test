@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 
         th{
-            color: var(--blue-light);            
+            color: var(--background);            
             font-weight: 400;
             padding: 1rem 2rem;
             text-align: left;
@@ -23,7 +23,7 @@ export const Container = styled.div`
         tbody{
             box-shadow: 0 -0.2rem 0.7rem rgba(0,0,0, 0.1);
             tr{
-                border: 4rem solid red;
+                box-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0, 0.1);
             }
         }
         td{

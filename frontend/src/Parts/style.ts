@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
     margin: 0 auto;
-    padding: 2.5rem 15rem;
+    padding: 2.5rem 13rem;
     width: 100%;
     background-color: var(--shape);
     border-radius: 0.5rem;

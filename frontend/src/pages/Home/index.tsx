@@ -49,10 +49,10 @@ function Home() {
         try {
             api.post("/logout")
                 .then(response => {
-                    if (response){
+                    if (response) {
                         localStorage.removeItem("@managerUser-Token");
                         history.push("/");
-                    } 
+                    }
                 });
         } catch (err) {
             console.log({
@@ -70,9 +70,9 @@ function Home() {
                 <table>
                     <thead>
                         <tr>
-                            <th>Titulo</th>
+                            <th>Name</th>
                             <th>Email</th>
-                            <th>Data</th>
+                            <th>Date</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -80,7 +80,9 @@ function Home() {
                             <tr key={user.id}>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
-                                <td>{user.created_at}</td>
+                                <td>{new Intl.DateTimeFormat('pt-BR').format(
+                                    new Date(user.created_at)
+                                )}</td>
                             </tr>
                         ))}
                     </tbody>

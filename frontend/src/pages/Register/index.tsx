@@ -30,7 +30,10 @@ const Register = (): JSX.Element => {
         } else {
             try {
                 api.post("/register", register)
-                    .then(response =>{history.push("/");
+                    .then(response =>{
+                        if(response.status === 200) {
+                            history.push("/");
+                        }
                     });
             } catch (err) {
                 console.log({

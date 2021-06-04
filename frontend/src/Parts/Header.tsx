@@ -5,7 +5,7 @@ export function Header() {
     return (
         <Container>
             <img src={logoImg} alt="Logo Zukt" />
-            <h1>User Manager</h1>
+            <h1>User Management</h1>
         </Container>
     )
 }
